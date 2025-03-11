@@ -11,7 +11,7 @@ const app = express();
 connectDB();
 
 app.use(cors({
-  origin:"https://cognocore-todo.vercel.app/",
+  origin:"https://cognocore-todo.vercel.app",
   credentials:true
 }));
 app.use(express.json());
