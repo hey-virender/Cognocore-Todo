@@ -6,7 +6,7 @@ export const ToastProvider = ({ children }) => {
   const [toasts, setToasts] = useState([]);
 
   const addToast = (message, type = "info") => {
-    console.log("adding toast");
+
     const id = Date.now();
     setToasts((prevToast) => [...prevToast, { id, message, type }]);
     setTimeout(() => {
