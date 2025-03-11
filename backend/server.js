@@ -10,7 +10,10 @@ const app = express();
 
 connectDB();
 
-app.use(cors());
+app.use(cors({
+  origin:"https://cognocore-todo.vercel.app/",
+  credentials:true
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
